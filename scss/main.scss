@@ -1,0 +1,63 @@
+@import "base";
+@import "layout";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Montserrat;
+  background-color: $VeryLightGrayishBlue;
+  max-width: 375px;
+  margin: 0 auto;
+  position: relative;
+}
+.mobileBackgroundImg {
+  position: absolute;
+  left: 64%;
+  top: -5%;
+  z-index: -1;
+}
+.container {
+  margin: 0 auto;
+  text-align: center;
+  .content__basic,
+  .content__master {
+    @include patternBackground(white, $DarkGrayishBlue);
+    hr {
+      border: 1px solid $LightGrayishBlue;
+    }
+  }
+  .content__professional {
+    @include patternBackground($LinearGradient, $VeryLightGrayishBlue);
+  }
+  .heading {
+    margin: 2rem;
+    h1,
+    h3 {
+      color: $DarkGrayishBlue;
+    }
+  }
+  .patternToggle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 12px;
+    margin-top: 2rem;
+  }
+  span {
+    font-size: 2rem;
+    margin: 0 0rem 0rem 0rem;
+  }
+}
+.main {
+  button {
+    @include buttonStyle($LinearGradient, $VeryLightGrayishBlue);
+  }
+}
+.content__professional button {
+  @include buttonStyle($VeryLightGrayishBlue, #696fdd);
+}
+.main h1 {
+  font-size: 3.5rem;
+}

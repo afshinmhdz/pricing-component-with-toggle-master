@@ -1,0 +1,98 @@
+.content h1, p, button {
+  margin: 1.25rem 0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Montserrat;
+  background-color: hsl(240deg, 78%, 98%);
+  max-width: 375px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.mobileBackgroundImg {
+  position: absolute;
+  left: 64%;
+  top: -5%;
+  z-index: -1;
+}
+
+.container {
+  margin: 0 auto;
+  text-align: center;
+}
+.container .content__basic,
+.container .content__master {
+  background: white;
+  color: hsl(232deg, 13%, 33%);
+  margin: 2rem;
+  padding: 1rem 2rem;
+  border-radius: 15px;
+}
+.container .content__basic hr,
+.container .content__master hr {
+  border: 1px solid hsl(234deg, 14%, 74%);
+}
+.container .content__professional {
+  background: linear-gradient(to right, #a3a8f0, #696fdd);
+  color: hsl(240deg, 78%, 98%);
+  margin: 2rem;
+  padding: 1rem 2rem;
+  border-radius: 15px;
+}
+.container .heading {
+  margin: 2rem;
+}
+.container .heading h1,
+.container .heading h3 {
+  color: hsl(232deg, 13%, 33%);
+}
+.container .patternToggle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 12px;
+  margin-top: 2rem;
+}
+.container span {
+  font-size: 2rem;
+  margin: 0 0rem 0rem 0rem;
+}
+
+.main button {
+  width: 100%;
+  padding: 1rem 0;
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
+  background: linear-gradient(to right, #a3a8f0, #696fdd);
+  color: hsl(240deg, 78%, 98%);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+}
+
+.content__professional button {
+  width: 100%;
+  padding: 1rem 0;
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
+  background: hsl(240deg, 78%, 98%);
+  color: #696fdd;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+}
+
+.main h1 {
+  font-size: 3.5rem;
+}/*# sourceMappingURL=main.css.map */
