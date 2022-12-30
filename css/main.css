@@ -78,6 +78,15 @@ body {
   letter-spacing: 0.1rem;
   cursor: pointer;
 }
+.main button:hover {
+  background: #fff;
+  outline: 1px solid #696fdd;
+  color: #696fdd;
+  transition: 1s;
+}
+.main button:not(:hover) {
+  transition: 1s;
+}
 
 .content__professional button {
   width: 100%;
@@ -91,6 +100,15 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   cursor: pointer;
+}
+.content__professional button:hover {
+  background: linear-gradient(to right, #a3a8f0, #696fdd);
+  outline: 1px solid hsl(240deg, 78%, 98%);
+  color: hsl(240deg, 78%, 98%);
+  transition: 1s;
+}
+.content__professional button:not(:hover) {
+  transition: 1s;
 }
 
 .main h1 {

@@ -52,11 +52,11 @@ body {
 }
 .main {
   button {
-    @include buttonStyle($LinearGradient, $VeryLightGrayishBlue);
+    @include buttonStyle($LinearGradient, $VeryLightGrayishBlue,$white,$outlineHover,$outlineHover);
   }
 }
 .content__professional button {
-  @include buttonStyle($VeryLightGrayishBlue, #696fdd);
+  @include buttonStyle($VeryLightGrayishBlue, #696fdd,$LinearGradient,$VeryLightGrayishBlue,$VeryLightGrayishBlue);
 }
 .main h1 {
   font-size: 3.5rem;
