@@ -43,15 +43,15 @@ body {
   .patternToggle {
     display: flex;
     flex-direction: row;
-    align-items:center;
+    align-items: center;
     justify-content: space-around;
     font-size: 12px;
     margin-top: 2rem;
   }
-  .cost{
+  .cost {
     display: flex;
+    justify-content: center;
     align-items: baseline;
-    padding: 0rem 2rem;
   }
   span {
     font-size: 2rem;
@@ -59,11 +59,23 @@ body {
 }
 .main {
   button {
-    @include buttonStyle($LinearGradient, $VeryLightGrayishBlue,$white,$outlineHover,$outlineHover);
+    @include buttonStyle(
+      $LinearGradient,
+      $VeryLightGrayishBlue,
+      $white,
+      $outlineHover,
+      $outlineHover
+    );
   }
 }
 .content__professional button {
-  @include buttonStyle($VeryLightGrayishBlue, #696fdd,$LinearGradient,$VeryLightGrayishBlue,$VeryLightGrayishBlue);
+  @include buttonStyle(
+    $VeryLightGrayishBlue,
+    #696fdd,
+    $LinearGradient,
+    $VeryLightGrayishBlue,
+    $VeryLightGrayishBlue
+  );
 }
 .main h1 {
   font-size: 3.5rem;
@@ -72,13 +84,13 @@ body {
   position: relative;
   width: 60px;
   height: 34px;
-  input { 
+  input {
     opacity: 0;
     width: 0;
     height: 0;
   }
 }
-.costTransition{
+.costTransition {
   transition: 2s;
 }
 .slider {
@@ -88,8 +100,8 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background:linear-gradient(to right, #a3a8f0 , #696fdd);;
-  transition: .4s;
+  background: linear-gradient(to right, #a3a8f0, #696fdd);
+  transition: 0.4s;
   &:before {
     position: absolute;
     content: "";
@@ -98,12 +110,12 @@ body {
     left: 4px;
     bottom: 4px;
     background-color: white;
-    transition: .4s;
+    transition: 0.4s;
   }
 }
 
 input:checked + .slider {
-  background:$LinearGradient;
+  background: $LinearGradient;
   &:before {
     -webkit-transform: translateX(26px);
     transform: translateX(26px);
@@ -117,5 +129,23 @@ input:focus + .slider {
   border-radius: 34px;
   &:before {
     border-radius: 50%;
+  }
+}
+@media screen and(min-width:900px) {
+  body {
+    max-width: 1440px;
+    width: 100%;
+  }
+  .main {
+    display: flex;
+    justify-content: space-around;
+  }
+  .content {
+    min-width: 370px;
+    margin: 0 auto;
+  }
+  .patternToggle {
+    max-width: 30%;
+    margin: 0 auto;
   }
 }

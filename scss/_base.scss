@@ -1,36 +1,42 @@
-$LinearGradient:linear-gradient(to right, #a3a8f0 , #696fdd);
+$LinearGradient: linear-gradient(to right, #a3a8f0, #696fdd);
 $VeryLightGrayishBlue: hsl(240, 78%, 98%);
 $LightGrayishBlue: hsl(234, 14%, 74%);
 $GrayishBlue: hsl(233, 13%, 49%);
 $DarkGrayishBlue: hsl(232, 13%, 33%);
-$white:#fff;
-$outlineHover:#696fdd;
-@mixin  patternBackground($backgroundColorPateern,$fontColor) {
-    background: $backgroundColorPateern;
-    color: $fontColor;
-    margin: 2rem;
-    padding: 1rem 2rem;
-    border-radius: 15px;
+$white: #fff;
+$outlineHover: #696fdd;
+@mixin patternBackground($backgroundColorPateern, $fontColor) {
+  background: $backgroundColorPateern;
+  color: $fontColor;
+  margin: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 15px;
 }
-@mixin buttonStyle($buttonBackground,$fontColor,$hoverBackground,$hoverOutlineColor,$hoverFontColor){
-    width: 100%;
-    padding: 1rem 0;
-    border: none;
-    border-radius: 5px;
-    font-weight: 700;
-    background: $buttonBackground;
-    color: $fontColor;
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
-    cursor: pointer;
-    &:hover{
-        background: $hoverBackground;
-        outline: 1px solid $hoverOutlineColor;
-        color: $hoverFontColor;
-        transition: 1s;
-      }
-      &:not(:hover){
-        transition: 1s;
-      }
+@mixin buttonStyle(
+  $buttonBackground,
+  $fontColor,
+  $hoverBackground,
+  $hoverOutlineColor,
+  $hoverFontColor
+) {
+  width: 100%;
+  padding: 1rem 0;
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
+  background: $buttonBackground;
+  color: $fontColor;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+  &:hover {
+    background: $hoverBackground;
+    outline: 1px solid $hoverOutlineColor;
+    color: $hoverFontColor;
+    transition: 1s;
+  }
+  &:not(:hover) {
+    transition: 1s;
+  }
 }

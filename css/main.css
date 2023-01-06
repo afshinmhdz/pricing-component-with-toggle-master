@@ -33,7 +33,7 @@ body {
 .container .content__master {
   background: white;
   color: hsl(232deg, 13%, 33%);
-  margin: 2rem;
+  margin: 1rem;
   padding: 1rem 2rem;
   border-radius: 15px;
 }
@@ -44,7 +44,7 @@ body {
 .container .content__professional {
   background: linear-gradient(to right, #a3a8f0, #696fdd);
   color: hsl(240deg, 78%, 98%);
-  margin: 2rem;
+  margin: 1rem;
   padding: 1rem 2rem;
   border-radius: 15px;
 }
@@ -65,8 +65,8 @@ body {
 }
 .container .cost {
   display: flex;
+  justify-content: center;
   align-items: baseline;
-  padding: 0rem 2rem;
 }
 .container span {
   font-size: 2rem;
@@ -175,4 +175,23 @@ input:focus + .slider {
 }
 .slider.round:before {
   border-radius: 50%;
+}
+
+@media screen and (min-width: 900px) {
+  body {
+    max-width: 1440px;
+    width: 100%;
+  }
+  .main {
+    display: flex;
+    justify-content: space-around;
+  }
+  .content {
+    min-width: 370px;
+    margin: 0 auto;
+  }
+  .patternToggle {
+    max-width: 30%;
+    margin: 0 auto;
+  }
 }/*# sourceMappingURL=main.css.map */
